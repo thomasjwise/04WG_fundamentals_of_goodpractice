@@ -10,3 +10,188 @@ editor: visual
 
 ## Session Objectives
 
+- Understand how to apply the Fundamentals of Good Practice when writing code 
+- Understand how to review and improve pre-written code, using these Fundamentals
+- Begin to write your own simple code
+
+## Today's Plan
+
+- Review of Last Weeks Session (including discussion)
+- Section 1: Fundamental Principles of Good Practice 
+- Exercise 1: Code Review & Discussion 
+- Break 
+- Section 2: Applying and Enhancing Good Practice 
+- Exercise 2: Improving your own code 
+
+# Review of Last Week 
+Errors in your work
+
+# Fundamentals of Good Practice
+
+## Today's Resources 
+
+Material today was developed using reference to: 
+
+- [Quality Assurance of Code for Analysis and Research (Duck Book)](<https://best-practice-and-impact.github.io/qa-of-code-guidance/intro.html>)
+- [The Analytical Quality Assurance (AQuA) Book](<https://www.gov.uk/guidance/the-aqua-book>)
+- [The Analysis Functions reproducible analytical pipelines (RAP) strategy](<https://analysisfunction.civilservice.gov.uk/policy-store/reproducible-analytical-pipelines-strategy/>)
+- [Tidyverse Style Guide](<https://style.tidyverse.org/syntax.html>)
+- Clean Code: A Handbook of Agile Software Craftsmanship by Robert C.Martin; 2008
+
+## Important Note 
+
+The idea of Fundamentals of Good Practice, arises from developing complex coding projects. 
+
+Today we will focus on: 
+
+- How to create readable code 
+- Some elements of code documentation
+- Some elements of modularity and project structuring
+- Peer Review 
+
+We will not be covering: 
+
+- Reproducibility (Covered in Session 7)
+- Version Control (Covered in Session 8)
+- Unit Tests 
+- Formal Code & Project Documentation
+
+## Fundamental Principles 
+
+- **Reproducible**: When you conduct the same analysis, using the same data, you should always obtain the same results. 
+- **Auditable**: Any analysis produced should be able to provide insight into who made a decision and when it was made, as well as the evidence which supports the decision made. 
+- **Assured**: Quality Assurance (QA) is vital for high quality analysis, but should be proportional to the analyses purpose. 
+Throughout today's session, we will focus on how to apply these principles to your code. 
+
+## Clean & Readable Code 
+
+When writing code, there are many style guides available in general these will help you to appropriately: 
+
+- Comment or Document your code 
+- Name your Functions, Variables or Classes 
+- Separate elements of your code with white space
+- Use indentation to make sure your code is readable
+- Provide other useful guidance for formatting
+
+In general, these are guides and not conventions which can be applied to the letter, as these are typically closer to an art form, than a science. 
+
+## Naming Conventions 
+
+- **camelCase**:
+  - Names start with a lowercase letter, with every subsequent work starting with an upper case letter. 
+- **PascalCase**: 
+  - Each word starts with an upper case letter, including the first
+- **snake_case**:
+  - All words start with a lower case letter, with an underscore (`_`) between them - this is particularly common for the tidyverse. 
+  
+## Informative Names
+
+Where possible, use unique, informative names for elements within your project, these should: 
+
+- Provide clear and concise names for variables, functions and classes 
+- Make it understandable to the reader its purpose 
+- Be a balance between being an explicit description and easy to reference in your code
+  
+## Syntax 
+
+- **Spacing**: Generally, give your code "room to breathe", spacing out your code to make it easy to read. 
+  - Take a look at: [Tudyverse Style Guide: Spacing](<https://style.tidyverse.org/syntax.html>)
+- **Line Length**: Your maximum code line length should be 80 characters (this can be marked in RStudio)
+- **Indentation**: Use two spaces, never use tabs or a mix of tabs and spaces 
+  - *Exception: When a line break occurs inside parentheses, use tabs to align accordingly)*
+  
+## To Comment or not to comment?
+
+Commenting your code, allows you to provide reasoning, explanations and details to your code.
+
+- A comment should begin with a `# ` and most often occurs before a code chunk
+- Use Comments sparingly and with purpose! 
+
+Please note: 
+
+- Over commenting can become confusing, take up time and make it difficult to read 
+- Under commenting can make your code hard to follow, and assumptions to be made 
+- It takes practice to find the right balance when commenting
+
+## Main Takeaways 
+
+- When starting a project, choose a style convention and stick to it 
+- Each team, organisation and person will have a style guide preference, use the most appropriate for your work
+
+
+# Exercise 1: Code Review 
+
+Is your code clean? 
+
+# Exericse 1: Code Discussion
+
+# Break
+
+# Applying and Enhancing Good Practice 
+
+## Modularity & Re-usable code 
+
+During complex projects code can become repetitive and disorganised with issues like: 
+
+- Walls of code which are hard to absorb
+- Long, complex scripts which are hard to follow 
+- Overly complex code, which could be simplified
+- A complex, opaque code base
+
+## Modularity & Re-usable code
+
+To overcome these challenges you could 
+
+- Divide your code into smaller, more manageable scripts
+- Write repeated/re-usable code as functions 
+- Group data and methods as classes 
+- Create modules, of related classes & functions
+- Create packages to help organise modules
+
+## Employing Modularity
+
+Although there are many ways we could employ modularity, lets focus on segmentation. 
+
+We can use `source()` 
+- This allows the calling and operation of a named file, URL or connection which is then read accordingly as an entire file. 
+- Multiple parameters can be applied to specify how this file is run. 
+- Generally, the function source, should be run at the beginning of a script, to bring in specific information to the current script or file. 
+
+## Structuring your project 
+
+- Use good filename conventions 
+  - Consistent, short and descriptive names 
+  - No spaces, with underscores or dashes to ensure machine readability 
+  - Date formatting is consistent (i.e: `YYYY-MM-DD`)
+  - Padding the left side of number with zeros to maintain order
+- Preserve raw data, with cleaning occuring only on copies 
+- Ensure that all outputs are disposable 
+- Use project templates where possible (such as [Cookiecutter](<https://github.com/cookiecutter/cookiecutter>))
+
+# Exercise 2: Improving your Own Code
+
+## Homework 
+
+- Reflect on the work we have started during our first 4 sessions. 
+- Begin to think about how you can, have already, or will apply these skills in your area.
+- During Session 9, we will be engaging in a mini-project so please consider: 
+  - What data or area you'd be interested in exploring this could include: 
+  - Specific area of the "Learning Activities" dataset 
+  - Another dataset relevant to your working area 
+  - A dataset from [Kaggle](<https://www.kaggle.com/>)
+- We will discuss potential topics and research areas in future sessions! 
+
+## Next Session 
+
+- Topic: Data Analysis & Visualisation (Part 1)
+- Date: June 3rd 11:30-13:00
+
+
+
+
+
+
+
+
+
+
