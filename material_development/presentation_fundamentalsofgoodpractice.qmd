@@ -1,1 +1,12 @@
+---
+title: "Fundamentals of Good Practice"
+author: "Thomas Wise"
+format: 
+  revealjs:
+    smaller: true
+    theme: dark
+editor: visual
+---
+
+## Session Objectives
 
